@@ -92,6 +92,7 @@ export class Slide {
 
 
   changeSlide(index) {
+    this.transition(true);
     this.moverSlide(this.slideArray[index].positionElement);
     this.slidesIndexNav(index);
     this.changeActiveClass();
